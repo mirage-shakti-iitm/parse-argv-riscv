@@ -14,6 +14,7 @@ depends: [
   "astring-riscv"
 ]
 build: [
+  [make "add-cap-files"]
   ["dune" "subst"] {pinned}
   ["dune" "build" "-x" "riscv" "-p" "parse-argv" "-j" jobs]
   ["dune" "runtest" "-p" name "-j" jobs] {with-test}
