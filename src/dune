@@ -3,4 +3,4 @@
  (public_name parse-argv)
  (libraries astring)
  (flags :standard -safe-string)
- 	(ocamlopt_flags (-S -function-sections)))
+ 	(ocamlopt_flags (-default-compartment-id 1 -function-sections)))
